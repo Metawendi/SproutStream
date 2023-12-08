@@ -517,7 +517,28 @@
             text-decoration: none;
             color: inherit;
         }
-	            @media screen and (max-width: 768px){
+	@media screen and (max-width: 1024px) {
+            .float{
+                font-size: 2rem;
+            }
+        }
+        @media screen and (max-width: 580px){
+        .float {
+                font-size: .9rem;
+                text-shadow: none;
+                top: 20% !important;
+                left: 22% !important;
+            }
+        }
+        @media screen and (max-width: 414px){
+        .float {
+                font-size: .9rem;
+                text-shadow: none;
+                top: 15% !important;
+                left: 20% !important;
+            }
+        }
+        @media screen and (max-width: 768px){
             footer{
                 flex-direction: column;
             }
@@ -531,6 +552,7 @@
                 flex-direction: column; 
                 height: 100%;
                 width: 2vw;
+                flex-wrap: nowrap;
             }
             .navigation ul {
                 flex-direction: row;
@@ -538,6 +560,7 @@
                 align-items: center;
                 writing-mode: vertical-rl;
                 height: 100%;
+                flex-wrap: nowrap;
             }
             .accessibility img, .affiliations img{
                 display: none;
@@ -557,11 +580,15 @@
             .channel1, .channel2, .channel3, .channel4 {
                 width: 90%;
             }
+            .channels{
+                width: 90%;
+                margin: 0;
+            }
             .unique-points p {
-                font-size: 1rem;
+                font-size: 1.3rem;
                 text-shadow: none;
-                top: 15%;
-                left: 18%;
+                top: 25%;
+                left: 30%;
             }
             .about {
                 height: auto;
@@ -629,7 +656,6 @@
                 height: 30vh;
             }
         }
-
     </style>
     <header> 
         <div class="logo">
