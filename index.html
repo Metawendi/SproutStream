@@ -517,6 +517,119 @@
             text-decoration: none;
             color: inherit;
         }
+	            @media screen and (max-width: 768px){
+            footer{
+                flex-direction: column;
+            }
+            .about, .unique-features,.channels {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navigation{
+                right: 0;
+                display: flex;  
+                flex-direction: column; 
+                height: 100%;
+                width: 2vw;
+            }
+            .navigation ul {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                writing-mode: vertical-rl;
+                height: 100%;
+            }
+            .accessibility img, .affiliations img{
+                display: none;
+            }
+            .social-links {
+                flex-direction: column;
+            }
+            .small-logo {
+                margin: 0
+            }
+            .channels ul {
+                display: none;
+            }
+            .download-now {
+                width: 80%;
+            }
+            .channel1, .channel2, .channel3, .channel4 {
+                width: 90%;
+            }
+            .unique-points p {
+                font-size: 1rem;
+                text-shadow: none;
+                top: 15%;
+                left: 18%;
+            }
+            .about {
+                height: auto;
+            }
+            .column1, .column2, .column3 {
+                padding: 5rem 0;
+            }
+            .log-in-btn {
+                font-size: 1rem;
+                width: 80%;
+                position: absolute;
+                top: -2rem;
+                margin: 0 auto;
+            }
+            .signup {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .signup input, .signup button {
+                width: 90%;
+            }
+            .column1, .column2, .column3 {
+                position: relative;
+            }
+            .column1 p, .column2 p, .column3 p {
+                bottom: 1.2rem;
+                font-size: .8rem;
+                width: 40%;
+            }
+            .statement {
+                font-size: .6rem;
+            }
+            footer, header{
+                width: 100%;
+                align-items: center;
+            }
+            .slides-nav>div {
+                width: 1rem;
+                height: 1rem;
+            }
+            .slides-nav {
+                justify-content: center;
+            }
+            .logo img{
+                margin: 0;
+            }
+            .download-btn {
+                width: 80%;
+                font-size: 1rem;
+                border-radius: 1rem;
+            }
+            .download-btn img {
+                width: 1rem;
+                height: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            #myText {
+                font-size: 1rem;
+            }
+            .swiper {
+                height: 30vh;
+            }
+        }
+
     </style>
     <header> 
         <div class="logo">
