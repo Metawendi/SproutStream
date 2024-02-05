@@ -3,11 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Wendi Wang; A01345480">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sprout Stream is a streaming platform that offers a safe, fun, and educational streaming experience for children of all ages. Discover shows that entertain, educate, and inspire.">
+    <meta name="keywords" content="streaming platform, educational content for kids, safe shows for children, kids educational series">
+    <meta name="author" content="Sprout Stream">
+    <meta property="og:title" content="Sprout Stream - Safe and Educational Streaming for Kids"/>
+    <meta property="og:description" content="Discover a world of learning and fun with Sprout Stream. Safe, educational, and entertaining content designed for children to explore, learn, and grow."/>
+    <meta property="og:url" content="http://www.sproutstream.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://metawendi.github.io/SproutStream/assets/Logo_transparent.png"/>
+    <meta property="og:image:alt" content="Sprout Stream Logo"/>
+    <meta property="og:site_name" content="Sprout Stream"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SproutStream">
+    <meta name="twitter:title" content="Sprout Stream - Safe and Educational Streaming for Kids">
+    <meta name="twitter:description" content="Discover a world of learning and fun with Sprout Stream. Safe, educational, and entertaining content designed for children.">
+    <meta name="twitter:image" content="https://metawendi.github.io/SproutStream/assets/Logo_transparent.png">
+    <meta name="twitter:image:alt" content="Sprout Stream Logo">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap|Baloo+2:wght@400;600;800&display=swap|Poppins" rel="stylesheet">
     <link rel="icon" href="./assets/Favicon Black.png" type="image/x-icon">
-    <title>Features</title>
+    <title>Sprout Stream - Safe and Educational Streaming for Kids</title>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "What is Sprout Stream?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sprout Stream is a media streaming platform designed specifically for children, offering a wide range of age-appropriate shows and educational content."
+            }
+          }, {
+            "@type": "Question",
+            "name": "How do I set age-appropriate content for my child?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can set content restrictions in your account settings, ensuring your child only has access to shows suitable for their age group."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Can multiple children use the same account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can create multiple profiles under one account, each with its own viewing preferences and age-appropriate content."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Are there educational shows on Sprout Stream?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we have a variety of educational shows that are both fun and informative, catering to different age groups and learning stages."
+            }
+          }, {
+            "@type": "Question",
+            "name": "How can I monitor what my child is watching?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our platform offers parental control features, allowing you to track viewing history and set viewing limits."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Is Sprout Stream available on all devices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sprout Stream is accessible on various devices, including smartphones, tablets, smart TVs, and computers."
+            }
+          }]
+        }
+        </script>
+        
 </head>
 <body>
     <style>
@@ -42,6 +107,8 @@
         }
         h2 {
             font-family: 'Baloo 2', sans-serif;
+            display: flex;
+            justify-content: center;
         }
         header{
             display: flex;
@@ -128,9 +195,6 @@
         }
         .feature5 {
             border-right: none;
-        }
-        .unique-features{
-            overflow-x:scroll;
         }
         .column1 p, .column2 p,.column3 p {
             width: 50%;
@@ -320,6 +384,7 @@
             height: 100%;
             border: none; 
             overflow: hidden;
+            position: relative;
         }
         .swiper-wrapper {
             display: flex;
@@ -360,6 +425,9 @@
             0 1rem var(--purple),
             0 1rem white;
         }
+        .about-wrapper h2 {
+         margin-bottom: -8rem;
+        }
         .about h3 {
             background: rgba(255,255,255,.8);
             margin-bottom: 3rem;
@@ -395,7 +463,7 @@
             padding: .5rem;
             width: 80%;
             border: none;
-            border: .1rem solid var(--darkblue);
+            /* border: .1rem solid var(--darkblue); */
             box-shadow: 
             0 0 1rem var(--purple),
             0 0 1rem var(--purple);
@@ -516,6 +584,20 @@
         .download-now a{
             text-decoration: none;
             color: inherit;
+        }
+        #movieDetails {
+            display: block !important;
+            padding: 5rem;
+            background: rgba(255,255,255,.8);
+            border-radius: 1rem;
+            position: absolute;
+            height: 80%;
+            width: 75%;
+            visibility: hidden;
+        }
+        #movieDetails p{
+            padding: 2rem;
+            text-align: left;
         }
 	@media screen and (max-width: 1024px) {
             .float{
@@ -655,6 +737,9 @@
             .swiper {
                 height: 30vh;
             }
+            .feature1, .feature2, .feature3,.feature4, .feature5{
+                border: none;
+            }
         }
     </style>
     <header> 
@@ -682,6 +767,8 @@
         </div>
     </header>
     <main>
+        <div class="about-wrapper">
+            <h2>About Us</h2>
         <div class="about" id="about">
             <div class="column1">
                 <h3>1,900+ movies</h3>
@@ -696,11 +783,15 @@
                 <p>Parent control for carefully designed AGE GROUPS</p>
             </div>
         </div>
+        </div>
         <div class='swiper' id='swiper'>
+            <h2>Popular Shows</h2>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"></div>
+                <div class="swiper-slide">
+                    <div id="movieDetails" style="display:none;"></div>
+                </div>
             </div>
             <div class="slides-nav">
                 <div class="nav-icon"></div>
@@ -721,7 +812,7 @@
           </div>
         <div class="unique-points" id="unique-points">
             <h2>Sprout Stream Specials</h2>
-            <img src="./assets/Banner_2.svg" alt="Features">
+            <img src="./assets/Banner_2.svg" alt="Educational Content Highlights">
             <p class="float">For Different Age Groups</p>
             <div class="mission">
                  <h4>Mission Statement</h4>
@@ -736,6 +827,7 @@
             </div>
         </div>
         <div class="faq" id="faq">
+            <h2>Frequently Asked Questions</h2>
             <button class="accordion">Q1: What is Sprout Stream?</button>
             <div class="panel">
                 <p>Sprout Stream is a media streaming platform designed specifically for children, offering a wide range of age-appropriate shows and educational content.</p>
@@ -852,6 +944,15 @@
         '13.jpeg',
         '1.png',
         ];
+        const movieDetails = {
+        '2.png': {
+            description: `Embark on a spectacular journey to the beautiful Italian Riviera with "Luca," a heartwarming tale of friendship, adventure, and the enchanting mysteries lurking beneath the sea. This animated masterpiece, brought to life by the visionary storytellers at Pixar Animation Studios, introduces us to Luca Paguro, a young and curious sea monster with an insatiable desire to explore the world above the water's surface. Despite the warnings of his family about the dangers posed by humans, Luca's adventurous spirit can't be tamed. His life takes a thrilling turn when he meets Alberto Scorfano, another sea monster with a passion for human culture. Together, they venture into the nearby coastal town of Portorosso, disguised as humans, and experience the joys and challenges of a world they've longed to be a part of. "Luca" is a celebration of friendship that transcends boundaries, a reminder of the beauty of stepping out of our comfort zones, and a tribute to the magical summers that shape our youth. With its stunning animation, captivating storyline, and unforgettable characters, "Luca" invites viewers of all ages to dream, discover, and dive into the endless possibilities that life has to offer. Join Luca and Alberto as they discover the true meaning of friendship and bravery, and see how their unforgettable summer adventures bring them closer, change their lives, and reveal the world's wonders in ways they never imagined. "Luca" is not just a movie—it's a journey to the heart of what makes us dreamers and adventurers.`,
+            tagline: "Prepare for an unforgettable trip.",
+            categories: "Animation | Adventure | Comedy | Drama | Family | Fantasy",
+            rating: "PG - Includes mild humor, language, some thematic elements, and occasional violence."
+        }
+    };
+
         let current_index = 0;  // Current index of the main image
 		let slides_interval;  // Interval for automatically changing slides
 		let playing = false;
@@ -865,20 +966,40 @@
         big_image.setAttribute(key, imageAttributes[key]);
         }
 		document.querySelector('.swiper-slide').append(big_image);
+        // Global reference to the current image element for easy event listener management
+let currentImageElement = null;
         const set_main_image = (image_index) => {
-			// TODO: set the main-image src image based on the passed parameter	    
-			big_image.src = `assets/${big_image_root[image_index]}`;
-			// TODO: set the hidden textbox to the current index (if you take this approach)
-			// calls the function to update the big image for the slides as well as...	    
-			// updating the thumbnails based on the current index
-			current_index = image_index;
-            set_nav_buttons(image_index);
-		}
+                big_image.src = `assets/${big_image_root[image_index]}`;
+                current_index = image_index;
+                set_nav_buttons(image_index);
+
+                // Cleanup: Remove previously attached event listeners from big_image
+                big_image.removeEventListener('mouseover', onMouseOverActions);
+                big_image.removeEventListener('mouseout', onMouseOutActions);
+
+                // Check if the new image is '2.png'
+                if (big_image_root[image_index] === '2.png') {
+                    // For '2.png', attach event listeners for both showing details and controlling the slideshow
+                    big_image.addEventListener('mouseover', onMouseOverActions);
+                    big_image.addEventListener('mouseout', onMouseOutActions);
+                }
+            };
+            function onMouseOverActions() {
+            pauseSlideshow();
+            showMovieDetails('2.png'); // This function now needs to both show the details and pause the slideshow.
+        }
+
+        function onMouseOutActions() {
+            resumeSlideshow();
+            hideMovieDetails(); // Similarly, hide the details and resume the slideshow when the mouse leaves.
+        }
+
         const first_load = () => {
 			// Calling 'set_main_image' with index 0 to display the first image as the main image
 			set_main_image(0);
 		}
         const start_rotation = () => {
+            clearInterval(slides_interval);
             // This setInterval function is used to automatically rotate through the images
 			// // Every 2000 milliseconds (2 seconds), the set_next_image function is called
             slides_interval = window.setInterval(set_next_image, 3000);
@@ -887,6 +1008,19 @@
             playing = true;
 
         } 
+        function pauseSlideshow() {
+            if (playing) {
+                clearInterval(slides_interval);
+                playing = false; // Update the playing state
+            }
+        }
+
+        function resumeSlideshow() {
+            if (!playing) {
+                start_rotation(); // This will set the interval again
+            }
+        }
+
 		// setting up navigation to the next image in the rotation
 		const set_next_image = () => {
 		// Using a ternary statement to check if the current index is the last in the array-reset to 0 (first image), otherwise go to the next index
@@ -926,6 +1060,25 @@
         ).join("");
         element.innerHTML = splitText;
     }   
+    function showMovieDetails(imageName) {
+    const details = movieDetails[imageName];
+    // Assuming you have a container to show the details. You need to create this in your HTML.
+    const detailsContainer = document.querySelector('#movieDetails');
+    detailsContainer.innerHTML = `<h2>Luca</h2>
+                                  <p>${details.description}</p>
+                                  <p><strong>Tagline:</strong> ${details.tagline}</p>
+                                  <p><strong>Categories:</strong> ${details.categories}</p>
+                                    <p><strong>Content Rating:</strong> ${details.rating}</p>`;
+    detailsContainer.style.visibility='visible';// Hide the container
+
+    }
+
+    function hideMovieDetails() {
+        const detailsContainer = document.querySelector('#movieDetails');
+        detailsContainer.style.visibility='hidden';// Hide the container
+// Hide the container
+    }
+
 // Split the text of the paragraph with the id of 'myText'
         splitText("#myText");
         gsap.from("#myText span", {
